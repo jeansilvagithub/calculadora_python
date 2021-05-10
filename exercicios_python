@@ -1,0 +1,17 @@
+def calculadora():
+  print("Bem Vindo a minha Calculadora, comece digitando os valores que deseja calcular")
+  valor1 = float(input("Digite o Primeiro Valor: "))
+  valor2 = float(input("Digite o Segundo Valor: "))
+  print("Escolha qual Operação Aritmética que deseja realizar, digitando:")
+  print("1 para Soma; 2 para Subtração; 3 para Divisão; 4 para Expoente")
+  opcao = float(input("Digite sua opção: "))
+  if opcao == 1:
+    print("A Soma dos valores é: ", valor1 + valor2)
+  if opcao == 2:
+    print("A Subtração dos valores é: ",valor1 - valor2)
+  if opcao == 3:
+    print("A Divisão dos valores é: ", valor1 / valor2)
+  if opcao == 4:
+    print("O Expoente dos valores é: ", valor1 ** valor2)
+  if opcao > 4:
+    print("Comece novamente e escolha um número de 1 a 4 para realizar a Operação Aritmética")
